@@ -46,9 +46,4 @@ package() {
   install $installopts "$licdir" "$_sourcedir/LICENSE"
   install $installopts "$docdir" "$_sourcedir/README"
   install $installopts "$shrdir/$pkgname" "$_sourcedir/st.info"
-  # make --directory="$srcdir/$pkgname" install
-}
-
-clean() {
-  rm -rf src st pkg *.diff
 }
